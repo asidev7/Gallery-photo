@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Image Gallery</title>
     <style>
+        nav {
+            background-color: #333; 
+    
+        }
+
+        nav ul {
+            list-style-type: none; /* Supprimer les puces de liste */
+            margin: 0;
+            padding: 0;
+            text-align: center; 
+        }
+
+        nav ul li {
+            display: inline; 
+            margin: 0 10px; 
+        }
+
+        nav ul li a {
+            color: #fff; 
+            text-decoration: none; 
+            padding: 10px 10px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+        nav ul li a:hover {
+            background-color: #555; /* Couleur de fond au survol */
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -46,6 +73,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
     <div class="gallery">
         <?php
         // Database configuration
